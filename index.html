@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href='index.css'>
+</head>
+
+<body>
+    <header>
+        <h1 class='title'>Scrabble Cheat</h1>
+    </header>
+    <div class='scrabble'>
+        <div class="board"></div>
+        <div class='forms-div'>
+        <form class='your-letters-form'>
+                <label for='letters-input'>Enter your letters: </label>
+                <input type="text" id='letters-input'/>
+                <br>
+                <button type='submit' id='find-words-btn'>Find words</button>
+        </form>
+        <form class='play-word-form'>
+            <label for='play-word-input'>Play a word: </label>
+            <input type="text" id='play-word-input'/>
+            <span>
+                <input type='radio' id='down' name='down' value='Down'>
+                <label for='down'>Down</label>
+                <input type='radio' id='across' name='down' value='Down'>
+                <label for='across'>Across</label>
+            </span>
+            <button type='submit'id='play-word-btn'>Play Word</button>
+            <div id="error-msg"></div>
+        </form>
+        </div>
+        <span class='word-list-container'>
+            <h1>Possible words:</h1>
+            <ul class='word-list'>Enter your letters above.</ul>
+        </span>
+        <span class='definition-container'>
+            <h1>Word Definition:</h1>
+            <div class='definition-div'>
+                Click a word to get its definition.
+            </div>
+        </span>
+    </div>
+   
+</body>
+<script type='module' src='index.js'></script>
+</html>
+

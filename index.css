@@ -1,0 +1,138 @@
+html {
+  background-color: #e4eef7;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-size: medium;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.scrabble {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.forms-div {
+  max-width: 40vmin;
+}
+
+.your-letters-form {
+  background-color: #7cb6d1;
+  margin-top: 5vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#letters-input {
+  max-width: 90%;
+}
+
+.play-word-form {
+  display: flex;
+  background-color: #7cb6d1;
+  margin-top: 5vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-word-input {
+  max-width: 90%;
+}
+
+.board {
+  margin-left: 1vmin;
+  min-width: 50vmin;
+  min-height: 50vmin;
+  width: 50vmin;
+  height: 50vmin;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  border: bisque solid 2vmin;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+  background-color: beige;
+  border: black solid 1px;
+  font-size: 1.5vmin;
+  color: beige;
+}
+.square:hover {
+  background-color: #48642c;
+  color: #48642c;
+}
+
+.selectedSquare {
+  background-color: yellow;
+}
+
+#error-msg {
+  display: none;
+  background-color: red;
+  color: black;
+  padding: 2%;
+}
+
+.word-list-container {
+  margin: 1vmin;
+  max-height: 50vmin;
+  max-width: 50vmin;
+  overflow: auto;
+}
+.word-list-container h1 {
+  font-size: 100%;
+  text-align: center;
+}
+.word-list-container .word-list {
+  padding-left: 0;
+}
+.word-list-container .word-list li {
+  text-align: left;
+  list-style-type: none;
+  font-size: 80%;
+  padding-left: 0;
+}
+
+.definition-container {
+  margin: 1vmin;
+  max-height: 50vmin;
+  width: 30vmin;
+  overflow: auto;
+  font-size: 100%;
+}
+.definition-container h1 {
+  font-size: 100%;
+  text-align: center;
+}
+.definition-container .definition-div {
+  text-align: center;
+  font-size: 80%;
+}
+
+/*# sourceMappingURL=index.css.map */
