@@ -45,7 +45,7 @@ function playWordValidation(word){
         setTimeout(() => errorMsg.style.display = 'none', 3000);
         return false;
     }
-    else if(word.length > 7){
+    else if(word.length > 15){
         errorMsg.textContent = 'To many letters.';
         errorMsg.style.display = 'block';
         setTimeout(() => errorMsg.style.display = 'none', 3000);
