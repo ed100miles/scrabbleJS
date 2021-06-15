@@ -1,6 +1,6 @@
 // Variables
 
-$primary-bg: rgb(228, 238, 247);
+$primary-bg: rgba(255, 255, 255, 0);
 $square-bg: beige;
 $square-hover-bg: rgb(72, 100, 44);
 
@@ -9,6 +9,7 @@ html{
     width: 100vw;
     height: 100vh;
     margin: 0;
+    margin-top: 1vh;
 }
 body{
     font-size: medium;
