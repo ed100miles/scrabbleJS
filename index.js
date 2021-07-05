@@ -179,7 +179,7 @@ function findWords(e){
     userLetters = userLetters.toLowerCase();
     // console.log(userLetters)
     if(!/^[a-zA-Z]+$/i.test(userLetters)){
-        errorMsg.textContent = 'You can only play letters or \'_\' (underscore).';
+        errorMsg.textContent = 'You can only play letters.';
         errorMsg.style.display = 'block';
         setTimeout(() => errorMsg.style.display = 'none', 3000);
         return false;
