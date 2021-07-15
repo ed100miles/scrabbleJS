@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(122, 149, 209, 0);
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -18,10 +18,17 @@ body {
 }
 
 .scrabble {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .forms-div {
@@ -33,11 +40,21 @@ body {
   margin-top: 5vmin;
   padding: 1vmin;
   border-radius: 1vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #letters-input {
@@ -45,16 +62,26 @@ body {
 }
 
 .play-word-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #7cb6d1;
   margin-top: 5vmin;
   padding: 1vmin;
   border-radius: 1vmin;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #play-word-input {
@@ -68,15 +95,23 @@ body {
   width: 50vmin;
   height: 50vmin;
   background-color: aquamarine;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
   border: bisque solid 2vmin;
 }
 
 .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   white-space: nowrap;
   text-align: center;
   background-color: beige;
@@ -84,6 +119,7 @@ body {
   font-size: 1.5vmin;
   color: beige;
 }
+
 .square:hover {
   background-color: #48642c;
   color: #48642c;
@@ -105,14 +141,18 @@ body {
   max-height: 50vmin;
   max-width: 50vmin;
   overflow: auto;
+  color: white;
 }
+
 .word-list-container h1 {
   font-size: 100%;
   text-align: center;
 }
+
 .word-list-container .word-list {
   padding-left: 0;
 }
+
 .word-list-container .word-list li {
   text-align: left;
   list-style-type: none;
@@ -126,14 +166,16 @@ body {
   width: 30vmin;
   overflow: auto;
   font-size: 100%;
+  color: white;
 }
+
 .definition-container h1 {
   font-size: 100%;
   text-align: center;
 }
+
 .definition-container .definition-div {
   text-align: center;
   font-size: 80%;
 }
-
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,6 @@
 // Variables
 
-$primary-bg: rgba(255, 255, 255, 0);
+$primary-bg: rgba(122, 149, 209, 0);
 $square-bg: beige;
 $square-hover-bg: rgb(72, 100, 44);
 
@@ -107,6 +107,7 @@ body{
     max-height: 50vmin;
     max-width: 50vmin;
     overflow: auto;
+    color: white;
 
     h1{
         font-size: 100%;
@@ -133,6 +134,7 @@ body{
     width: 30vmin;
     overflow: auto;
     font-size: 100%;
+    color: white;
 
     h1{
         font-size: 100%;
