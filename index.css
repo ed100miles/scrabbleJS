@@ -94,7 +94,7 @@ body {
   min-height: 50vmin;
   width: 50vmin;
   height: 50vmin;
-  background-color: aquamarine;
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[15];
@@ -137,7 +137,10 @@ body {
 }
 
 .word-list-container {
+  background-color: #7cb6d1;
+  border-radius: 0.5vmin;
   margin: 1vmin;
+  padding: 1vmin;
   max-height: 50vmin;
   max-width: 50vmin;
   overflow: auto;
@@ -161,12 +164,15 @@ body {
 }
 
 .definition-container {
+  background-color: #7cb6d1;
+  border-radius: 0.5vmin;
   margin: 1vmin;
   max-height: 50vmin;
   width: 30vmin;
   overflow: auto;
   font-size: 100%;
   color: white;
+  padding-bottom: 1vmin;
 }
 
 .definition-container h1 {
