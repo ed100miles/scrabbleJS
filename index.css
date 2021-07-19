@@ -1,5 +1,6 @@
 html {
   background-color: rgba(122, 149, 209, 0);
+  font-family: monospace;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -17,7 +18,7 @@ body {
   font-size: 3em;
 }
 
-.scrabble {
+.top-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +32,19 @@ body {
       flex-wrap: wrap;
 }
 
-.forms-div {
-  max-width: 40vmin;
+.bottom-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5vmin;
 }
 
 .your-letters-form {
@@ -55,10 +67,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#letters-input {
-  max-width: 90%;
 }
 
 .play-word-form {
@@ -138,13 +146,11 @@ body {
 
 .word-list-container {
   background-color: #7cb6d1;
-  border-radius: 0.5vmin;
+  border-radius: 1vmin;
   margin: 1vmin;
   padding: 1vmin;
-  max-height: 50vmin;
-  max-width: 50vmin;
-  overflow: auto;
-  color: white;
+  width: 35vmin;
+  color: black;
 }
 
 .word-list-container h1 {
@@ -165,13 +171,13 @@ body {
 
 .definition-container {
   background-color: #7cb6d1;
-  border-radius: 0.5vmin;
+  border-radius: 1vmin;
   margin: 1vmin;
   max-height: 50vmin;
-  width: 30vmin;
+  width: 35vmin;
   overflow: auto;
   font-size: 100%;
-  color: white;
+  color: black;
   padding-bottom: 1vmin;
 }
 

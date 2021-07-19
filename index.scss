@@ -6,6 +6,7 @@ $square-hover-bg: rgb(72, 100, 44);
 
 html{
     background-color: $primary-bg;
+    font-family: monospace;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -22,15 +23,20 @@ body{
     font-size: 3em;
 }
 
-.scrabble{
+.top-div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.forms-div{
-    max-width: 40vmin;
+.bottom-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5vmin;
 }
+
 .your-letters-form{
     background-color: rgb(124, 182, 209);
     margin-top: 5vmin;
@@ -42,9 +48,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-#letters-input{
-    max-width: 90%;
-}
+
 .play-word-form{
     display: flex;
     background-color: rgb(124, 182, 209);
@@ -103,24 +107,19 @@ body{
 
 .word-list-container{
     background-color: rgb(124, 182, 209);
-    border-radius: 0.5vmin;
+    border-radius: 1vmin;
     margin: 1vmin;
     padding: 1vmin;
-    max-height: 50vmin;
-    max-width: 50vmin;
-    overflow: auto;
-    color: white;
-
+    width: 35vmin;
+    // overflow: auto;
+    color: black;
     h1{
         font-size: 100%;
         text-align: center;
     }
-    
     .word-list{
         padding-left: 0;
-        
         li{
-            // background-color: blue;
             text-align: left;
             list-style-type: none;
             font-size: 80%;
@@ -131,20 +130,18 @@ body{
 
 .definition-container{
     background-color: rgb(124, 182, 209);
-    border-radius: 0.5vmin;
+    border-radius: 1vmin;
     margin: 1vmin;
     max-height: 50vmin;
-    width: 30vmin;
+    width: 35vmin;
     overflow: auto;
     font-size: 100%;
-    color: white;
+    color: black;
     padding-bottom: 1vmin;
-
     h1{
         font-size: 100%;
         text-align: center;
     }
-
     .definition-div{
         text-align: center;
         font-size: 80%;
